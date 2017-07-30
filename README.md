@@ -1,1 +1,2 @@
-# DEMO
+# FinalProject
+Community for Companies and Web Developers
