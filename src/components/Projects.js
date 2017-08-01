@@ -18,14 +18,73 @@ class Projects extends React.Component {
 
 					{/* EDIT ICON */}
 					<Modal
-							header='Modal Title'
+							header='Add/Edit Recent Projects'
 							fixedFooter
 							trigger={
 								<div className="col s4 right-align">
 									<a href="#"><i className="fa fa-pencil-square-o edit-icon" aria-hidden="true"></i></a>
 								</div>
 								
-							}> <p>MODAL CONTENT</p>
+							}> 
+
+							<div className="row">
+							    <form className="col s12">
+
+							    	
+
+							      <div className="row">
+							      	{/* SUMMARY FIELD */}
+							        <div className="input-field col s12">
+							          <input id="project_title" type="text" className="validate" />
+							          <label for="project_title">Project Title</label>
+							        </div>
+							        {/* END SUMMARY FIELD */}
+							      </div>
+
+							      <div className="row">
+							      	{/* PROFILE PICTURE UPLOAD */}
+							        <div className="input-field col s12">
+							          <div className="file-field input-field">
+										      <div className="btn red lighten-1">
+										        <span> &nbsp; &nbsp; &nbsp; Add Project Screenshot &nbsp; &nbsp; &nbsp; </span>
+										        <input type="file" />
+										      </div>
+										      <div className="file-path-wrapper">
+										        <input className="file-path validate" type="text" />
+										      </div>
+										    </div>
+							        </div>
+							        {/* END PROFILE PICTURE UPLOAD */}
+							      </div>
+
+							      <div className="row">
+							      	{/* FIRST NAME FIELD */}
+							        <div className="input-field col s6">
+							          <input id="demo_link" type="text" className="validate" />
+							          <label for="demo_link">Demo Link</label>
+							        </div>
+							        {/* END FIRST NAME FIELD */}
+
+							        {/* LAST NAME FIELD */}
+							        <div className="input-field col s6">
+							          <input id="github_link" type="text" className="validate" />
+							          <label for="github_link">GitHub Link</label>
+							        </div>
+							        {/* END LAST NAME FIELD */}
+							      </div>
+
+							      <br />
+										
+										{/* SUBMIT BUTTON */}
+										<div className="row">
+											<button className="btn-large waves-effect waves-light" type="submit" name="action">
+												Submit
+										  </button>
+									  </div>
+										{/* END SUBMIT BUTTON */}
+
+							    </form>	
+								</div>
 
 					</Modal>
 					{/* END EDIT ICON */}

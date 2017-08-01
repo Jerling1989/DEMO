@@ -19,14 +19,51 @@ class Skills extends React.Component {
 
 						{/* EDIT ICON */}
 						<Modal
-								header='Modal Title'
+								header='Add/Edit Skills'
 								fixedFooter
 								trigger={
 									<div className="col s4 right-align">
 										<a href="#"><i className="fa fa-pencil-square-o edit-icon" aria-hidden="true"></i></a>
 									</div>
 									
-								}> <p>MODAL CONTENT</p>
+								}> 
+								<p><strong>ADD A SKILL NAME AND INPUT YOUR PROFICIENCY IN THAT SKILL</strong></p>
+
+
+								<div className="row">
+							    <form className="col s12">
+
+							      <div className="row">
+							      	{/* SKILL NAME FIELD */}
+							        <div className="input-field col s2">
+							          <input id="skill_name" type="text" className="validate" />
+							          <label for="skill_name">Skill Name</label>
+							        </div>
+							        {/* END SKILL NAME FIELD */}
+
+							        {/* SKILL EFFICIENCY INPUT */}
+							        <div className="input-field col s10">
+							        	<br />
+							          <p class="range-field">
+										      <input type="range" id="test5" min="0" max="100" />
+										    </p>
+							        </div>
+							        {/* END SKILL EFFICIENCY INPUT */}
+							      </div>
+
+							      <br />
+										
+										{/* SUBMIT BUTTON */}
+										<div className="row">
+											<button className="btn-large waves-effect waves-light" type="submit" name="action">
+												Submit
+										  </button>
+									  </div>
+										{/* END SUBMIT BUTTON */}
+
+							    </form>	
+								</div>
+
 
 						</Modal>
 						{/* END EDIT ICON */}
